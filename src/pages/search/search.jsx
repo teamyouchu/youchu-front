@@ -3,6 +3,7 @@ import { useEffect, useContext } from 'react';
 import { UserContext } from 'lib/UserContext';
 import { useHistory } from 'react-router-dom';
 import SearchInput from 'components/searchInput/SearchInput';
+import xIcon from 'assets/images/xmark.svg';
 
 export default function Search() {
   const { setIsShowHeader } = useContext(UserContext);
@@ -33,7 +34,7 @@ export default function Search() {
           <SearchInput page={'search'} />
         </style.SearchFlex>
         <style.Xmark
-          src={require('assets/images/xmark.svg').default}
+          src={xIcon}
           onClick={() => {
             history.goBack();
           }}

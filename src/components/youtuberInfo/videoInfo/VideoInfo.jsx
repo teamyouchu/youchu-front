@@ -1,5 +1,6 @@
 import * as style from './VideoInfoStyle';
 import { numberComma } from 'lib/numberFomat';
+import playIcon from 'assets/images/play.png';
 
 export default function VideoInfo({
   data: { id, thumbnail, title, views, publishedDatetime },
@@ -15,7 +16,7 @@ export default function VideoInfo({
       </style.VideoThumbnailBox>
       <style.VideoTitle>{title}</style.VideoTitle>
       <style.SpanFlex>
-        <style.PlayIcon src={require('assets/images/play.png').default} />
+        <style.PlayIcon src={playIcon} />
         <style.InfoSpan>{numberComma(views)}</style.InfoSpan>
         <style.InfoSpan>{publishedDatetime.substr(0, 10)}</style.InfoSpan>
       </style.SpanFlex>

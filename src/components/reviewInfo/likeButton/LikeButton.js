@@ -2,6 +2,8 @@ import * as style from './LikeButtonStyle';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import reviewAPI from 'api/reviewAPI';
+import likedHeart from 'assets/images/likedHeart.svg';
+import heart from 'assets/images/heart.svg';
 
 export default function LikeButton({ reviewId, userObj, liked, likes }) {
   const history = useHistory();
@@ -37,14 +39,7 @@ export default function LikeButton({ reviewId, userObj, liked, likes }) {
   };
   return (
     <style.LikeButton onClick={onLikeClick}>
-      <style.LikeImg
-        alt="좋아요"
-        src={
-          isliked
-            ? require('assets/images/likedHeart.svg').default
-            : require('assets/images/heart.svg').default
-        }
-      />
+      <style.LikeImg alt="좋아요" src={isliked ? likedHeart : heart} />
       <style.likeCount>{likeCount}</style.likeCount>
     </style.LikeButton>
   );

@@ -8,6 +8,7 @@ import ReviewCardSkeleton from 'components/reviewCardSkeleton/ReviewCardSkeleton
 import FilterDropdown from 'components/filterDropdown/FilterDropdown';
 import { categoryOptions, sortOptions } from 'lib/modules';
 import { UserContext } from 'lib/UserContext';
+import searchIcon from 'assets/images/searchIcon.svg';
 
 export default function List() {
   const { setIsSearchShow } = useContext(UserContext);
@@ -73,9 +74,7 @@ export default function List() {
         </style.FilterBox>
         <style.FilterBox>
           <style.SearchDiv>
-            <style.SearchImg
-              src={require('assets/images/searchIcon.svg').default}
-            />
+            <style.SearchImg src={searchIcon} />
             <style.SearchInput
               placeholder="유튜버 이름으로 검색하세요"
               value={searchValue}

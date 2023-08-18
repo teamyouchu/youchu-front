@@ -1,6 +1,7 @@
 import * as style from './style';
 import { numToKorean } from 'lib/numberFomat';
 import ContentsOverflow from 'components/contentsOverflow/ContentsOverflow';
+import youtubeIcon from 'assets/images/youtubeIcon.png';
 
 export default function YoutuberIntro({
   youtuberInfo: { id, description, subscribes },
@@ -16,9 +17,7 @@ export default function YoutuberIntro({
             target="_blank"
             rel="noreferrer"
           >
-            <style.YoutubeIcon
-              src={require('assets/images/youtubeIcon.png').default}
-            />
+            <style.YoutubeIcon src={youtubeIcon} />
           </style.YoutubeIconA>
         </style.SpanFlex>
         <style.SpanFlex>

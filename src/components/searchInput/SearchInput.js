@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import searchAPI from 'api/searchAPI';
 import RelatedSearch from 'components/relatedSearch/RelatedSearch';
 import { throttle } from 'lodash';
+import searchIcon from 'assets/images/searchIcon.svg';
 
 export default function SearchInput({ page, setChannel }) {
   // 화면 넓이 1170px 이하되면 연관검색어 종료
@@ -180,10 +181,7 @@ export default function SearchInput({ page, setChannel }) {
         page={page}
       >
         {page === 'header' && (
-          <style.SearchImg
-            src={require('assets/images/searchIcon.svg').default}
-            onClick={onSearch}
-          />
+          <style.SearchImg src={searchIcon} onClick={onSearch} />
         )}
         <style.SearchInput
           page={page}

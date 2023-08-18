@@ -5,6 +5,8 @@ import { UserContext } from 'lib/UserContext';
 import SearchInput from 'components/searchInput/SearchInput';
 import Registration from 'components/registration/Registration';
 import LogoutModal from './logoutModal/LogoutModal';
+import logo from 'assets/images/YouChu_logo.png';
+import avatar from 'assets/images/DefaultProfile.png';
 
 export default function Header() {
   const {
@@ -53,9 +55,7 @@ export default function Header() {
       <style.HeaderBox className={isShowHeader ? null : 'noShow'}>
         <style.HeaderFlex M_direction={'column'}>
           <style.LogoLink to="/">
-            <style.LogoImg
-              src={require('assets/images/YouChu_logo.png').default}
-            />
+            <style.LogoImg src={logo} />
           </style.LogoLink>
           <style.HeaderNavBox>
             <style.HeaderNav exact to="/">
@@ -77,10 +77,7 @@ export default function Header() {
           )}
           {userObj.isLogin ? (
             <style.GoogleAvatarBox>
-              <style.GoogleAvatar
-                src={require('assets/images/DefaultProfile.png').default}
-                onClick={onAvatarClick}
-              />
+              <style.GoogleAvatar src={avatar} onClick={onAvatarClick} />
               {showLogout && <LogoutModal setShowLogout={setShowLogout} />}
             </style.GoogleAvatarBox>
           ) : (
