@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import googleLogo from 'assets/images/googleLogo.png';
 
 export const LoginContainer = styled.div`
   padding-top: 80px;
@@ -73,7 +74,7 @@ export const LoginLetter = styled.div`
 `;
 
 export const GoogleLogo = styled.img.attrs(() => ({
-  src: require('assets/images/googleLogo.png').default,
+  src: googleLogo,
 }))`
   width: 15px;
   height: 15px;

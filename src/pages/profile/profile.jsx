@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { UserContext } from 'lib/UserContext';
 import { categoryArray } from 'lib/modules';
 import ReviewList from 'components/reviewList/ReviewList';
+import DefaultProfile from 'assets/images/DefaultProfile.png';
 
 export default function Profile() {
   const { userObj } = useContext(UserContext);
@@ -14,9 +15,7 @@ export default function Profile() {
         <style.ProfileBox>
           <style.PicBox>
             <style.flexBox>
-              <style.UserPic
-                src={require('assets/images/DefaultProfile.png').default}
-              />
+              <style.UserPic src={DefaultProfile} />
               <style.ModifyBtn to="/modifyNickName">
                 <style.UserName>{userObj.data.nickname}</style.UserName>
                 <style.UserEmail>{userObj.data.email}</style.UserEmail>

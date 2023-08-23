@@ -6,6 +6,7 @@ import ContentsOverflow from 'components/contentsOverflow/ContentsOverflow';
 import BulrReview from './bulrReview/BulrReview';
 import LikeButton from './likeButton/LikeButton';
 import reviewAPI from 'api/reviewAPI';
+import avatar from 'assets/images/DefaultProfile.png';
 
 export default function ReviewInfo({
   data: {
@@ -67,9 +68,7 @@ export default function ReviewInfo({
           <style.ReviewInfoHeader>
             {!all && <style.BestReview>Best Review</style.BestReview>}
             <style.WriterInfoFlex>
-              <style.ReviewWriterImg
-                src={require('assets/images/DefaultProfile.png').default}
-              />
+              <style.ReviewWriterImg src={avatar} />
               <style.WriterInfoBox>
                 {!isBulrReview && (
                   <style.RatingBox margin_B={'3px'}>

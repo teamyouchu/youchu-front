@@ -6,6 +6,7 @@ import ReviewCard from 'components/reviewCard/ReviewCard';
 import ReviewCardSkeleton from 'components/reviewCardSkeleton/ReviewCardSkeleton';
 import RecommendCard from 'components/recommendCard/RecommendCard';
 import RecommendCardSkeleton from 'components/recommendCardSkeleton/RecommendCardSkeleton';
+import banner from 'assets/images/banner.png';
 
 export default function Home() {
   const { userObj } = useContext(UserContext);
@@ -74,7 +75,7 @@ export default function Home() {
           <style.BoldSpan color="#eb3323">유튜버</style.BoldSpan>
           <style.BoldSpan>들을 추천해봐요 👍</style.BoldSpan>
         </style.TextField>
-        <style.BannerImg src={require('assets/images/banner.png').default} />
+        <style.BannerImg src={banner} />
       </style.BannerContainer>
       <style.RowContainer>
         <style.RowTitle left="35px">

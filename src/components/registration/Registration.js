@@ -3,6 +3,7 @@ import { useState, useEffect, useContext, useRef } from 'react';
 import { UserContext } from 'lib/UserContext';
 import SearchInput from 'components/searchInput/SearchInput';
 import RegButton from 'components/registration/regButton/RegButton';
+import xIcon from 'assets/images/close-icon.png';
 
 export default function Registration() {
   const {
@@ -74,7 +75,7 @@ export default function Registration() {
             유튜버 등록
           </style.Span>
           <style.ModalXIcon
-            src={require('assets/images/close-icon.png').default}
+            src={xIcon}
             alt="close-btn"
             onClick={() => setRistOpen(false)}
           />
