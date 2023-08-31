@@ -25,9 +25,9 @@ export default function Registration() {
 
     // 모달 영역 외 클릭 시 종료
     const handleCloseModal = (e) => {
-      if (!ModalRef.current || !ModalRef.current.contains(e.target)) {
-        setRistOpen(false);
-      }
+      // if (!ModalRef.current || !ModalRef.current.contains(e.target)) {
+      //   setRistOpen(false);
+      // }
     };
 
     // esc 키 누르면 모달 종료
