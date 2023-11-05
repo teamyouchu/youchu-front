@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
           echo "REACT_APP_GOOGLE_CLIENT_ID=${{ secrets.REACT_APP_GOOGLE_CLIENT_ID }}" >> .env
 
       - name: Build                   # React Build
-        run: npm build
+        run: npm run build
 
       - name: Deploy
         env:
