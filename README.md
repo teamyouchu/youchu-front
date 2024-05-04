@@ -1,7 +1,7 @@
-<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/1abc6433-f174-4f5c-8e2a-35d2c457d895" width="200" />
-<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/4fb04a10-4b43-4fee-af17-e6cb856cc9e4" width="200" />
-<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/e409010b-2784-4316-bab6-e70bc7d9e45e" width="200" />
-<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/f73197b6-0754-48c3-a233-504747685128" width="200" />
+<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/1abc6433-f174-4f5c-8e2a-35d2c457d895" width="400" />
+<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/4fb04a10-4b43-4fee-af17-e6cb856cc9e4" width="400" />
+<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/e409010b-2784-4316-bab6-e70bc7d9e45e" width="400" />
+<img src="https://github.com/teamyouchu/youchu-front/assets/79249376/f73197b6-0754-48c3-a233-504747685128" width="400" />
 
 # 프로젝트 소개
 ❓ 유튜브 채널을 평가하고 코멘트를 남기며 자신의 취향에 맞는 채널을 추천 받을 수 있는 서비스
