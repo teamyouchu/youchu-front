@@ -32,7 +32,7 @@
 
 # 프로젝트 결과물
 - 배포 링크  
-    [YouChu](https://youchu.netlify.app)
+    [YouChu](https://legacy.youchu.io)
     > 🔑 테스트용 계정  
     > 구글 계정으로 로그인 가능
 - 깃허브 링크  
